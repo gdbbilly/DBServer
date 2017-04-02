@@ -68,9 +68,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="AutomaticTestUser1.cs" />
-    <Compile Include="AutomaticTestUser2.cs" />
-    <Compile Include="AutomaticTestUser3.cs" />
     <Compile Include="TestStories.cs" />
     <Compile Include="UnitTestRestaurantServiceAux.cs" />
     <Compile Include="UnitTestRestaurantSettingsMap.cs" />
