@@ -1,0 +1,4 @@
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\bin\Release\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\bin\Release\dbtest.Exceptions.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\obj\Release\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\obj\Release\dbtest.Exceptions.pdb

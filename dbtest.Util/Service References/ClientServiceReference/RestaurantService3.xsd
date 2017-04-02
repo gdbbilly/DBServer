@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/dbtest.Service.Contracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/dbtest.Service.Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfRestaurantContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RestaurantContract" nillable="true" type="tns:RestaurantContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestaurantContract" nillable="true" type="tns:ArrayOfRestaurantContract" />
+  <xs:complexType name="RestaurantContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantContract" nillable="true" type="tns:RestaurantContract" />
+  <xs:complexType name="ArrayOfRestaurantVotedContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RestaurantVotedContract" nillable="true" type="tns:RestaurantVotedContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestaurantVotedContract" nillable="true" type="tns:ArrayOfRestaurantVotedContract" />
+  <xs:complexType name="RestaurantVotedContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Votes" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RestaurantVotedContract" nillable="true" type="tns:RestaurantVotedContract" />
+</xs:schema>

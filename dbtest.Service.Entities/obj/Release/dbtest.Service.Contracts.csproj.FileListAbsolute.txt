@@ -1,0 +1,5 @@
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Service.Entities\bin\Release\dbtest.Service.Contracts.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Service.Entities\bin\Release\dbtest.Service.Contracts.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Service.Entities\obj\Release\dbtest.Service.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Service.Entities\obj\Release\dbtest.Service.Contracts.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Service.Entities\obj\Release\dbtest.Service.Contracts.pdb

@@ -1,0 +1,44 @@
+﻿@model bool
+<link href="../../Content/css/bootstrap.min.css" rel="stylesheet">
+<script>
+    $(document).ready(function () {
+        hideButton('@Model');
+        addButtonBindings();
+    });
+
+    function addButtonBindings() {
+        $('#btnCloseVotes').click(function () {
+            $.ajax({
+                type: "POST",
+                url: '/Home/CloseVotingHandler',
+                contentType: 'application/json; charset=utf-8',
+                dataType: "json",
+                success: function (data) {
+                    alert('Votação encerrada!');
+                    location.reload();
+                },
+                error: function () { alert('Erro ao encerrar as votações'); }
+            });
+        });
+    }
+
+    function hideButton(hide) {
+        if (hide.toLowerCase() == 'true') {
+            $('#btnCloseVotes').hide();
+            $('#btnClosedVotes').show();
+        }
+        else {
+            $('#btnCloseVotes').show();
+            $('#btnClosedVotes').hide();
+        }
+    }
+</script>
+<div class="divTopHeader divGradient">
+    <div class="divTitle">
+        <span>Administração</span>
+    </div>
+</div>
+<div style="padding-top: 20px">
+    <button id="btnCloseVotes" class="btn btn-lg btn-primary btn-block button-close-votes">Encerrar Votação</button>
+    <button id="btnClosedVotes" disabled="disabled" class="btn btn-lg btn-primary btn-block button-close-votes">Votação Encerrada</button>
+</div>

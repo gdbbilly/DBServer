@@ -1,0 +1,5 @@
+D:\Projetos\DBServer\dbtest.Service.Entities\bin\Debug\dbtest.Service.Contracts.dll
+D:\Projetos\DBServer\dbtest.Service.Entities\bin\Debug\dbtest.Service.Contracts.pdb
+D:\Projetos\DBServer\dbtest.Service.Entities\obj\Debug\dbtest.Service.Contracts.csprojResolveAssemblyReference.cache
+D:\Projetos\DBServer\dbtest.Service.Entities\obj\Debug\dbtest.Service.Contracts.dll
+D:\Projetos\DBServer\dbtest.Service.Entities\obj\Debug\dbtest.Service.Contracts.pdb

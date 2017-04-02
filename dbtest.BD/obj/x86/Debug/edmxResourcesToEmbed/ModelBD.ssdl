@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModelBD.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelBDStoreContainer">
+    <EntitySet Name="RestaurantSet" EntityType="ModelBD.Store.RestaurantSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RestaurantSettingsSet" EntityType="ModelBD.Store.RestaurantSettingsSet" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="RestaurantSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VotedInWeek" Type="bit" Nullable="false" />
+    <Property Name="DateVoted" Type="datetime" Nullable="true" />
+    <Property Name="Votes" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RestaurantSettingsSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="RestaurantVotedId" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

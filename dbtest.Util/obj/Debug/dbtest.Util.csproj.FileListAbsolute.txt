@@ -1,0 +1,7 @@
+D:\Projetos\DBServer\dbtest.Util\bin\Debug\dbtest.Util.dll.config
+D:\Projetos\DBServer\dbtest.Util\bin\Debug\dbtest.Util.dll
+D:\Projetos\DBServer\dbtest.Util\bin\Debug\dbtest.Util.pdb
+D:\Projetos\DBServer\dbtest.Util\obj\Debug\dbtest.Util.dll
+D:\Projetos\DBServer\dbtest.Util\obj\Debug\dbtest.Util.pdb
+D:\Projetos\DBServer\dbtest.Util\bin\Debug\System.Web.Mvc.dll
+D:\Projetos\DBServer\dbtest.Util\bin\Debug\System.Web.Mvc.xml

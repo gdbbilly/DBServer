@@ -1,0 +1,80 @@
+﻿<div class="divTopData">
+    <div>
+        <span class="spanHoraB">@DateTime.Now.ToShortTimeString()</span>
+    </div>
+    <div class="divBottomData divGradient" style="margin-top: 2px;">
+        <div style="padding: 10px">
+            @{
+                switch (DateTime.Now.DayOfWeek)
+                {
+                    case DayOfWeek.Monday:
+                <span class="spanDataDia">Segunda-Feira</span>
+                        break;
+                    case DayOfWeek.Tuesday:
+                <span class="spanDataDia">Terça-Feira</span>
+                        break;
+                    case DayOfWeek.Wednesday:
+                <span class="spanDataDia">Quarta-Feira</span>
+                        break;
+                    case DayOfWeek.Thursday:
+                <span class="spanDataDia">Quinta-Feira</span>
+                        break;
+                    case DayOfWeek.Friday:
+                <span class="spanDataDia">Sexta-Feira</span>
+                        break;
+                    case DayOfWeek.Saturday:
+                <span class="spanDataDia">Sábado</span>
+                        break;
+                    case DayOfWeek.Sunday:
+                <span class="spanDataDia">Domingo</span>
+                        break;
+                }
+
+                string month = string.Empty;
+                switch (DateTime.Now.Month)
+                {
+                    case 1:
+                        month = "Jan";
+                        break;
+                    case 2:
+                        month = "Fev";
+                        break;
+                    case 3:
+                        month = "Mar";
+                        break;
+                    case 4:
+                        month = "Abr";
+                        break;
+                    case 5:
+                        month = "Mai";
+                        break;
+                    case 6:
+                        month = "Jun";
+                        break;
+                    case 7:
+                        month = "jul";
+                        break;
+                    case 8:
+                        month = "Ago";
+                        break;
+                    case 9:
+                        month = "Set";
+                        break;
+                    case 10:
+                        month = "Out";
+                        break;
+                    case 11:
+                        month = "Nov";
+                        break;
+                    case 12:
+                        month = "Dez";
+                        break;
+
+                }
+                <br />
+                <span class="spanData">@DateTime.Now.Day @month @DateTime.Now.Year</span>
+            
+            }
+        </div>
+    </div>
+</div>

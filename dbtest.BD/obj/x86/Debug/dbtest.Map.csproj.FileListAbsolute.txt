@@ -1,0 +1,15 @@
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\App.config
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\dbtest.Map.dll.config
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\dbtest.Map.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\dbtest.Map.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\dbtest.Entities.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\EntityFramework.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\dbtest.Entities.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\dbtest.Exceptions.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\EntityFramework.xml
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\bin\x86\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\obj\x86\Debug\dbtest.Map.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\obj\x86\Debug\dbtest.Map.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.BD\obj\x86\Debug\dbtest.Map.pdb

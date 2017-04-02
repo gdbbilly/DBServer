@@ -1,0 +1,7 @@
+D:\Projetos\DBServer\dbtest.data\bin\Debug\dbtest.Entities.dll
+D:\Projetos\DBServer\dbtest.data\bin\Debug\dbtest.Entities.pdb
+D:\Projetos\DBServer\dbtest.data\bin\Debug\dbtest.Exceptions.dll
+D:\Projetos\DBServer\dbtest.data\bin\Debug\dbtest.Exceptions.pdb
+D:\Projetos\DBServer\dbtest.data\obj\Debug\dbtest.Entities.csprojResolveAssemblyReference.cache
+D:\Projetos\DBServer\dbtest.data\obj\Debug\dbtest.Entities.dll
+D:\Projetos\DBServer\dbtest.data\obj\Debug\dbtest.Entities.pdb

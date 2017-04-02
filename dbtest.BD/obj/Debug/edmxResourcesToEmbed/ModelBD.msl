@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelBDStoreContainer" CdmEntityContainer="ModelBDContainer">
+    <EntitySetMapping Name="RestaurantSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelBD.Restaurant)">
+        <MappingFragment StoreEntitySet="RestaurantSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="VotedInWeek" ColumnName="VotedInWeek" />
+          <ScalarProperty Name="DateVoted" ColumnName="DateVoted" />
+          <ScalarProperty Name="Votes" ColumnName="Votes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RestaurantSettingsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(ModelBD.RestaurantSettings)">
+        <MappingFragment StoreEntitySet="RestaurantSettingsSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="RestaurantVotedId" ColumnName="RestaurantVotedId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

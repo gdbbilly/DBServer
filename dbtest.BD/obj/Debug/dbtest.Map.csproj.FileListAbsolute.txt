@@ -1,0 +1,15 @@
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\App.config
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\dbtest.Map.dll.config
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\dbtest.Map.dll
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\dbtest.Map.pdb
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\dbtest.Entities.dll
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\dbtest.Exceptions.dll
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\EntityFramework.dll
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\dbtest.Entities.pdb
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\dbtest.Exceptions.pdb
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\EntityFramework.xml
+D:\Projetos\DBServer\dbtest.BD\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\DBServer\dbtest.BD\obj\Debug\dbtest.Map.csprojResolveAssemblyReference.cache
+D:\Projetos\DBServer\dbtest.BD\obj\Debug\dbtest.Map.dll
+D:\Projetos\DBServer\dbtest.BD\obj\Debug\dbtest.Map.pdb

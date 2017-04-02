@@ -1,0 +1,606 @@
+﻿html, body {
+    height: 100%;
+    background-color: transparent;
+    bgcolor: #FAFAFA;
+}
+
+.authentication-header {
+    height: 40px;
+    background-color: #333;
+}
+
+.authentication-footer-text {
+    float: right;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80%;
+}
+
+.header-logo {
+    background-image: url('../images/logo-small.png');
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    margin-left: 20px !important;
+    margin-top: -2px !important;
+}
+
+.user-text {
+    font-family: LatoRegular;
+    font-size: 12px;
+    color: #f6f6f6;
+    padding-top: 13px !important;
+    padding-left: 70% !important;
+    position: absolute !important;
+}
+
+.user-text-header {
+    font-family: LatoRegular;
+    font-size: 16px;
+    color: #f6f6f6;
+    padding-top: 13px !important;
+    padding-left: 70% !important;
+    position: absolute !important;
+}
+
+.divStyle {
+    box-shadow: 3px 3px 5px #888888;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #D4D4D4;
+    background-color: #F9F9F9; /* zoom: 1;  filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=2, OffY=2, Color=#999999);  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999', endColorstr='#999999')";*/
+    behavior: url(CSS3PIE);
+}
+
+.divAll {
+    margin: 15px 0 0 10px;
+    height: 720px !important;
+    width: 99% !important; /* background-color: White !important;*/
+}
+
+.divAllLeft {
+    width: 12%;
+    float: left;
+    margin-right: 10px;
+    min-width: 230px;
+}
+
+.divHeaderLeft {
+    width: 100%;
+    height: 150px;
+}
+
+.divLeft {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.divAllMiddle {
+    float: left;
+    width: 85%;
+    min-width: 25%;
+    height: 700px;
+    padding-left: 5px;
+}
+
+.divMiddle {
+    width: 100%;
+    height: 100%;
+}
+
+.divAllRight {
+    float: left;
+    width: 12%;
+    height: 100%;
+    
+}
+
+.divHeaderRight {
+    width: 100%;
+    height: 150px;
+}
+
+.divRight {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.divTopData {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.spanHoraB {
+    font-family: "LatoBold";
+    font-weight: bold;
+    font-size: 38px;
+    color: #585858;
+}
+
+.spanHora {
+    font-size: 35px;
+}
+
+.divBottomData {
+    border-radius: 5px 5px 5px 5px;
+    height: 68px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.spanDataDia {
+    font-family: "LatoRegular";
+    font-size: 18px;
+    color: #585858;
+}
+
+.spanData {
+    font-family: "LatoHairline";
+    font-size: 16px;
+    color: #585858;
+}
+
+.spanDataFont {
+    font-size: 18px;
+}
+
+.divTopHeader {
+    padding-top: 0px;
+    padding-left: 12px;
+    height: 27px;
+    font-weight: bold;
+    font-family: "LatoBold";
+    font-size: 11px !important;
+    color: #585858;
+}
+
+.divTitle {
+    position: relative;
+    height: 17px;
+    padding-top: 6px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.divText {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.divChart {
+    /* height: 170px;*/
+    height: auto;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    width: auto;
+    background-color: white;
+}
+
+.divGradient {
+    background: -moz-linear-gradient(90deg, rgb(240, 240, 240) 30%, rgb(231, 231, 231) 90%);
+    background: -webkit-linear-gradient(90deg, rgb(240, 240, 240) 30%, rgb(231, 231, 231) 90%);
+    background: -o-linear-gradient(90deg, rgb(240, 240, 240) 30%, rgb(231, 231, 231) 90%);
+    background: -ms-linear-gradient(90deg, rgb(240, 240, 240) 30%, rgb(231, 231, 231) 90%);
+    background: linear-gradient(180deg, rgb(240, 240, 240) 30%, rgb(231, 231, 231) 90%);
+    background: linear-gradient(#F0F0F0, #E8E8E8);
+    -pie-background: linear-gradient(#F0F0F0, #E8E8E8); /*  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#F0F0F0', EndColorStr='#E8E8E8');     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#E8E8E8')";*/
+    behavior: url(CSS3PIE);
+}
+
+.divReportSize {
+    float: left;
+    height: 380px;
+    margin: 0px 0px 10px 20px;
+    width: 30%;
+}
+
+.divRequestDescription {
+    color: #1F86AC;
+}
+
+.divRequests {
+    color: #BABABA;
+}
+
+.divHeaders {
+    color: #BABABA !important;
+    font-family: "LatoBoldItalic";
+    font-size: 12px !important;
+    float: left !important;
+    padding-top: 9px !important;
+}
+
+.divColumnnTitle {
+    margin-top: 1%;
+    float: left;
+    text-align: right;
+    border-bottom: 0.5px solid #F0F0F0;
+    width: 80px;
+}
+
+.divColumnName {
+    border-bottom: 0.5px solid #F0F0F0;
+    float: left;
+    margin-top: 1%;
+    overflow: hidden;
+    padding-left: 10px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 50%;
+    -ms-text-overflow: ellipsis;
+    behavior: url(CSS3PIE);
+}
+
+.divColumnValue {
+    margin-top: 1%;
+    color: #C0C0C0;
+    float: left;
+    font-weight: bold;
+    text-align: right;
+    width: 10%;
+    border-bottom: 0.5px solid #F0F0F0;
+}
+
+.spanLegend {
+    height: 106px !important;
+    display: table !important;
+    position: static !important;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.divTable {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    position: static;
+}
+
+.divHeaderFilters {
+    padding-right: 5px;
+    width: 75px;
+    text-align: right;
+    height: 100%;
+}
+
+.filter {
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+.solicitation-count-label {
+    font-family: "LatoBold";
+    font-weight: bold;
+    font-size: 54px;
+    color: #888888;
+    position: relative;
+    top: -8px;
+}
+
+.solicitation-count-description {
+    font-family: "LatoBlack";
+    font-size: 18px;
+    color: #888888;
+    position: relative;
+    top: -12px;
+}
+
+
+.solicitation-list-solicitation-number-div {
+    width: 124px;
+    height: 40px;
+    float: left;
+    margin-top: 8px;
+}
+
+.solicitation-list-solicitation-number > a {
+    font-family: "LatoBold";
+    color: #1F85AC;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.solicitation-list-customer-title {
+    width: 100px;
+    left: 138px;
+    position: relative;
+    float: left;
+    padding-top: 9px !important;
+    margin-left: -5px;
+}
+
+.solicitation-list-solicitation-date {
+    font-family: "LatoBold";
+    font-weight: bold;
+    font-size: 9px;
+    color: #8A8A8A;
+}
+
+.solicitation-list-solicitation-description {
+    color: #1F86AC;
+    font-family: "LatoBold";
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.solicitation-list-solicitation-description-div {
+    float: left;
+    padding-left: 5px;
+    display: inline;
+    margin-top: 9px;
+}
+
+.solicitation-list-data-row {
+    height: 40px;
+    width: 100%;
+    border-bottom: solid 1px #F0F0F0;
+}
+
+.solicitation-data-row:hover {
+    background-color: #F0F0F0;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+.solicitation-list-solicitation-customer {
+    width: 100px;
+    float: left;
+    font-family: "LatoRegular";
+    color: #8A8A8A;
+    font-size: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: 15px;
+}
+
+.solicitation-list-solicitation-status {
+    width: 110px;
+    float: right;
+    font-family: "LatoItalic";
+    margin-top: 14px;
+    text-align: right;
+    right: 11px;
+    position: relative;
+    cursor: help;
+}
+
+.solicitation-list-solicitation-flag-div {
+    width: 34px;
+    float: right;
+}
+
+.solicitation-list-flag {
+    width: 26px;
+    height: 26px;
+    margin-top: 9px;
+    background-repeat: no-repeat;
+    cursor: help;
+}
+
+.solicitation-list-flag-late {
+    background-image: url('images/icons/icon-status-late.png');
+}
+
+.solicitation-list-flag-attention {
+    background-image: url('images/icons/icon-status-attention.png');
+}
+
+.solicitation-list-flag-analysis {
+    background-image: url('images/icons/icon-status-analysis.png');
+}
+
+.solicitation-list-flag-almost {
+    background-image: url('images/icons/icon-status-almost.png');
+}
+
+.solicitation-list-header {
+    height: 33px;
+    width: 100%;
+    background-color: #FFFFFF !important;
+    border-bottom: solid 1px #F0F0F0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#simpledialog-modal-container {
+    display: none;
+}
+
+#solicitation-status-label-container {
+    display: none;
+}
+
+#simplemodal-overlay {
+    background-color: #000;
+}
+
+#simplemodal-container {
+    height: 420px;
+    width: 600px;
+    color: #bbb;
+    background-color: #333;
+    border: 4px solid #444;
+    padding: 12px;
+}
+
+    #simplemodal-container .simplemodal-data {
+        padding: 8px;
+    }
+
+    #simplemodal-container code {
+        background: #141414;
+        border-left: 3px solid #65B43D;
+        color: #bbb;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 12px;
+        padding: 4px 6px 6px;
+    }
+
+    #simplemodal-container a {
+        color: #ddd;
+    }
+
+        #simplemodal-container a.modalCloseImg {
+            background: url(../Content/images/icons/icon-close.png) no-repeat;
+            width: 25px;
+            height: 29px;
+            display: inline;
+            z-index: 3200;
+            position: absolute;
+            top: -15px;
+            right: -16px;
+            cursor: pointer;
+        }
+
+    #simplemodal-container h3 {
+        color: #84b8d9;
+    }
+
+.solicitation-flag-help {
+    position: relative;
+    left: 35px;
+    width: 525px;
+    top: -22px;
+}
+
+.solicitation-flag-analysis {
+    color: #008D0D;
+    font-family: "LatoItalic";
+}
+
+.solicitation-flag-almost {
+    color: #FFA500;
+    font-family: "LatoItalic";
+}
+
+.solicitation-flag-late {
+    color: #DC3912;
+    font-family: "LatoItalic";
+}
+
+.solicitation-flag-help-focus {
+    color: #f1f1f1;
+    font-family: "LatoRegular";
+}
+
+.solicitation-status-help-situation {
+    position: relative;
+    left: 15px;
+    width: 525px;
+    top: -22px;
+    margin-bottom: 4px;
+    padding-top: 13px;
+}
+
+.solicitation-status-help-title {
+    font-family: "LatoItalic";
+    color: #84b8d9;
+}
+
+.solicitation-status-help-description {
+}
+
+.solicitation-details-title {
+    font-family: "LatoLight";
+    font-size: 27px;
+    color: #F6F6F6;
+}
+
+.solicitation-details-window {
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#modal {
+    position: absolute;
+    background: url(tint20.png) 0 0 repeat;
+    background: rgba(0,0,0,0.2);
+    border-radius: 14px;
+    padding: 8px;
+    color: #bbb;
+    background-color: #333;
+    border: 4px solid #444;
+}
+
+#content {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#close {
+    position: absolute;
+    background: url(images/close.png) 0 0 no-repeat;
+    width: 24px;
+    height: 27px;
+    display: block;
+    text-indent: -9999px;
+    top: -7px;
+    right: -7px;
+}
+
+.solicitation-list-solicitation-title {
+    font-family: "LatoBold";
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.solicitation-modal {
+    font-size: 12px !important;
+}
+
+.solicitation-modal-value {
+    font-family: "LatoBold" !important;
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+    text-align: left;
+    font-weight: bold !important;
+}
+
+.button-close-votes {
+    width: 180px !important;
+    margin-left: 10%;
+    margin-top: 5%;
+}

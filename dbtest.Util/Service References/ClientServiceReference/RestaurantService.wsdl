@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RestaurantService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:32295/RestaurantService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:32295/RestaurantService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:32295/RestaurantService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/dbtest.Service.Contracts" />
+      <xsd:import schemaLocation="http://localhost:32295/RestaurantService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRestaurantService_GetRestaurants_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurants" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurants_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsNotVotedWeek_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsNotVotedWeek" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsNotVotedWeek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsNotVotedWeekResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsVotedWeek_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsVotedWeek" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsVotedWeek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsVotedWeekResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsNotVotedToday_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsNotVotedToday" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsNotVotedToday_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsNotVotedTodayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurant_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurant" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantWinnerToday_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantWinnerToday" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantWinnerToday_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantWinnerTodayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantVotedToday_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantVotedToday" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantVotedToday_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantVotedTodayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsCount" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_GetRestaurantsCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRestaurantsCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_UsersWithTodayVote_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsersWithTodayVote" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_UsersWithTodayVote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsersWithTodayVoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_VoteInRestaurant_InputMessage">
+    <wsdl:part name="parameters" element="tns:VoteInRestaurant" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_VoteInRestaurant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VoteInRestaurantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_ChecksIfUserVote_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChecksIfUserVote" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_ChecksIfUserVote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChecksIfUserVoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_UserVote_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserVote" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_UserVote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserVoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_CloseVoting_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloseVoting" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_CloseVoting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloseVotingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_VotingClosed_InputMessage">
+    <wsdl:part name="parameters" element="tns:VotingClosed" />
+  </wsdl:message>
+  <wsdl:message name="IRestaurantService_VotingClosed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VotingClosedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRestaurantService">
+    <wsdl:operation name="GetRestaurants">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurants" message="tns:IRestaurantService_GetRestaurants_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsResponse" message="tns:IRestaurantService_GetRestaurants_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsNotVotedWeek">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsNotVotedWeek" message="tns:IRestaurantService_GetRestaurantsNotVotedWeek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsNotVotedWeekResponse" message="tns:IRestaurantService_GetRestaurantsNotVotedWeek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsVotedWeek">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsVotedWeek" message="tns:IRestaurantService_GetRestaurantsVotedWeek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsVotedWeekResponse" message="tns:IRestaurantService_GetRestaurantsVotedWeek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsNotVotedToday">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsNotVotedToday" message="tns:IRestaurantService_GetRestaurantsNotVotedToday_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsNotVotedTodayResponse" message="tns:IRestaurantService_GetRestaurantsNotVotedToday_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurant">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurant" message="tns:IRestaurantService_GetRestaurant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantResponse" message="tns:IRestaurantService_GetRestaurant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantWinnerToday">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantWinnerToday" message="tns:IRestaurantService_GetRestaurantWinnerToday_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantWinnerTodayResponse" message="tns:IRestaurantService_GetRestaurantWinnerToday_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantVotedToday">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantVotedToday" message="tns:IRestaurantService_GetRestaurantVotedToday_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantVotedTodayResponse" message="tns:IRestaurantService_GetRestaurantVotedToday_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsCount" message="tns:IRestaurantService_GetRestaurantsCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/GetRestaurantsCountResponse" message="tns:IRestaurantService_GetRestaurantsCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsersWithTodayVote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/UsersWithTodayVote" message="tns:IRestaurantService_UsersWithTodayVote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/UsersWithTodayVoteResponse" message="tns:IRestaurantService_UsersWithTodayVote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VoteInRestaurant">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/VoteInRestaurant" message="tns:IRestaurantService_VoteInRestaurant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/VoteInRestaurantResponse" message="tns:IRestaurantService_VoteInRestaurant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChecksIfUserVote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/ChecksIfUserVote" message="tns:IRestaurantService_ChecksIfUserVote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/ChecksIfUserVoteResponse" message="tns:IRestaurantService_ChecksIfUserVote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserVote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/UserVote" message="tns:IRestaurantService_UserVote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/UserVoteResponse" message="tns:IRestaurantService_UserVote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseVoting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/CloseVoting" message="tns:IRestaurantService_CloseVoting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/CloseVotingResponse" message="tns:IRestaurantService_CloseVoting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VotingClosed">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestaurantService/VotingClosed" message="tns:IRestaurantService_VotingClosed_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestaurantService/VotingClosedResponse" message="tns:IRestaurantService_VotingClosed_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IRestaurantService" type="tns:IRestaurantService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRestaurants">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurants" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsNotVotedWeek">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurantsNotVotedWeek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsVotedWeek">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurantsVotedWeek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsNotVotedToday">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurantsNotVotedToday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurant">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantWinnerToday">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurantWinnerToday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantVotedToday">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurantVotedToday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRestaurantsCount">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/GetRestaurantsCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsersWithTodayVote">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/UsersWithTodayVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoteInRestaurant">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/VoteInRestaurant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChecksIfUserVote">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/ChecksIfUserVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserVote">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/UserVote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseVoting">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/CloseVoting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VotingClosed">
+      <soap:operation soapAction="http://tempuri.org/IRestaurantService/VotingClosed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RestaurantService">
+    <wsdl:port name="BasicHttpBinding_IRestaurantService" binding="tns:BasicHttpBinding_IRestaurantService">
+      <soap:address location="http://localhost:32295/RestaurantService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

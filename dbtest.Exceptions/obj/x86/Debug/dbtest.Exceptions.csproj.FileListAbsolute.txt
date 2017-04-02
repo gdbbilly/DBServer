@@ -1,0 +1,5 @@
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\bin\x86\Debug\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\bin\x86\Debug\dbtest.Exceptions.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\obj\x86\Debug\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\obj\x86\Debug\dbtest.Exceptions.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\obj\x86\Debug\dbtest.Exceptions.csprojResolveAssemblyReference.cache

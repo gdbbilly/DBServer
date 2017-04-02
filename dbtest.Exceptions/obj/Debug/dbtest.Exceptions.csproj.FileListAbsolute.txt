@@ -1,0 +1,4 @@
+D:\Projetos\DBServer\dbtest.Exceptions\bin\Debug\dbtest.Exceptions.dll
+D:\Projetos\DBServer\dbtest.Exceptions\bin\Debug\dbtest.Exceptions.pdb
+D:\Projetos\DBServer\dbtest.Exceptions\obj\Debug\dbtest.Exceptions.dll
+D:\Projetos\DBServer\dbtest.Exceptions\obj\Debug\dbtest.Exceptions.pdb

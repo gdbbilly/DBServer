@@ -1,0 +1,12 @@
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\App.config
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\dbtest.UnitTest.dll.config
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\dbtest.UnitTest.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\dbtest.Entities.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\dbtest.Map.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\EntityFramework.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\EntityFramework.SqlServer.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\EntityFramework.xml
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\bin\x86\Release\EntityFramework.SqlServer.xml
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\obj\x86\Release\dbtest.UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.UnitTest\obj\x86\Release\dbtest.UnitTest.dll

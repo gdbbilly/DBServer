@@ -1,0 +1,18 @@
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\bin\x86\Release\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\bin\x86\Release\WPFToolkit.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\bin\x86\Release\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\bin\x86\Release\WPFToolkit.pdb
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\MainWindow.baml
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\MainWindow.g.cs
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\App.g.cs
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\dbtest.Wpf.Properties.Resources.resources
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\dbtest.Wpf.csproj.GenerateResource.Cache
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\bin\x86\Release\Sistema de Votação.exe.config
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\bin\x86\Release\Sistema de Votação.exe
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\Sistema de Votação_MarkupCompile.cache
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\Sistema de Votação.g.resources
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\Sistema de Votação.exe
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\bin\x86\Release\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Wpf\obj\x86\Release\dbtest.Wpf.csprojResolveAssemblyReference.cache
+Z:\Google Drive\Works\dbserver\Projeto\dbtest.Wpf\bin\x86\Release\Sistema de Votação.exe.config
+Z:\Google Drive\Works\dbserver\Projeto\dbtest.Wpf\obj\x86\Release\Sistema de Votação.exe

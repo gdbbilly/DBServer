@@ -1,0 +1,51 @@
+﻿@model bool
+<script>
+    $(document).ready(function () {
+        $("#divAllMiddle").width($("#divAll").width() - 300);
+    });
+</script>
+<div class="authentication-header">
+    <div class="authentication-footer-text">
+        <div class="header-logo">
+        </div>
+    </div>
+    <div class="user-text-header">
+        @{Html.RenderAction("NameHeader");}
+    </div>
+</div>
+<div id="divAll" class="divAll">
+    <div class="divAllLeft">
+        <div class="divHeaderLeft divStyle">
+            @{Html.RenderAction("DateTimeWeek");}
+        </div>
+        <div class="divLeft divStyle">
+            @{Html.RenderAction("RestaurantsCount");}
+        </div>
+        <div class="divLeft divStyle">
+            @{Html.RenderAction("CountUsersWithVotes");}
+        </div>
+        @{
+            if (Model)
+            {
+            <div class="divLeft divStyle">
+                @{
+                Html.RenderAction("Administration");
+                }
+            </div>
+            }
+        }
+    </div>
+    <div id="divAllMiddle" class="divAllMiddle">
+        <div id="Graphs">
+            <div class="divReportSize divStyle">
+                @{Html.RenderAction("GraphicRestaurantVoted", "Graphics");}
+            </div>
+            <div class="divReportSize divStyle">
+                @{Html.RenderAction("GraphicAmountVotesRestaurant", "Graphics");}
+            </div>
+            <div class="divReportSize divStyle">
+                @{Html.RenderAction("GraphicMostVotedInWeek", "Graphics");}
+            </div>
+        </div>
+    </div>
+</div>

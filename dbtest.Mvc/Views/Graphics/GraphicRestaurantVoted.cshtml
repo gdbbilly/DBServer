@@ -1,0 +1,31 @@
+﻿@using dbtest.Util;
+@model List<dbtest.Entities.DataJson>
+           
+<div class="divTopHeader divGradient">
+    <div class="divTitle" style="float: left !important; width: 90%">
+        Percentual de Votos
+    </div>
+</div>
+<div class="divChart">
+    @Html.GeneratePieChart("RestaurantVoted", "/Graphics/RestaurantVoted", "chartVotes", "90%", "105%", true,false)
+</div>
+<div class="divGrid">
+    <div class="spanLegend">
+        <div class="divTable">
+            @{ 
+                foreach (var item in Model.Take(4))
+                {
+                <div class="divColumnnTitle">
+                    Restaurantes 
+                </div>
+                <div class="divColumnName">
+                    @item.Name.ToLower()
+                </div>
+                <div class="divColumnValue">
+                    @item.Value
+                </div>
+                }
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\bin\x86\Release\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\obj\x86\Release\dbtest.Exceptions.dll
+C:\Users\Rodrigo\Desktop\db svn\trunk\Projeto\dbtest.Exceptions\obj\x86\Release\dbtest.Exceptions.csprojResolveAssemblyReference.cache
+Z:\Google Drive\Works\dbserver\Projeto\dbtest.Exceptions\bin\x86\Release\dbtest.Exceptions.dll
+Z:\Google Drive\Works\dbserver\Projeto\dbtest.Exceptions\obj\x86\Release\dbtest.Exceptions.csprojResolveAssemblyReference.cache
+Z:\Google Drive\Works\dbserver\Projeto\dbtest.Exceptions\obj\x86\Release\dbtest.Exceptions.dll
