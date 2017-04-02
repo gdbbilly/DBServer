@@ -34,7 +34,7 @@ namespace dbtest.UnitTest
         [TestMethod]
         public void TestMethodRestaurantMapFindAllVotedWeek()
         {
-            Assert.IsTrue(RestaurantMap.Instance.FindAllVotedWeek().Count >= 0);
+            Assert.IsTrue(RestaurantMap.Instance.FindAllVotedWeek(GetFirstDayofWeek(DateTime.Now), GetLastDayofWeek(DateTime.Now)).Count >= 0);
         }
 
         [TestMethod]
@@ -47,6 +47,20 @@ namespace dbtest.UnitTest
         public void TestMethodRestaurantMapVotingClosed()
         {
             Assert.IsNotNull(RestaurantMap.Instance.VotingClosed());
+        }
+
+        private static DateTime GetFirstDayofWeek(DateTime date)
+        {
+            int lessNumber = 1;
+
+            return date.AddDays(lessNumber - date.DayOfWeek.GetHashCode());
+        }
+
+        private static DateTime GetLastDayofWeek(DateTime date)
+        {
+            int GreateNumber = 7;
+
+            return date.AddDays(GreateNumber - date.DayOfWeek.GetHashCode());
         }
     }
 }

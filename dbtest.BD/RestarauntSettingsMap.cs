@@ -42,12 +42,12 @@ namespace dbtest.Map
         /// Retorna todos usuários com voto no dia corrente
         /// </summary>
         /// <returns></returns>
-        private static Dictionary<string, VoteEntity> UsersWithVoteToday()
+        private static Dictionary<string, VoteEntity> UsersWithVoteToday(DateTime day)
         {
             var users = new Dictionary<string, VoteEntity>();
             foreach (var item in UsersWithVote())
             {
-                if (item.Value.Date == DateTime.Now.ToShortDateString())
+                if (item.Value.Date == day.ToShortDateString())
                 {
                     users.Add(item.Key, item.Value);
                 }
@@ -79,12 +79,12 @@ namespace dbtest.Map
                 using (var model = new ModelBDContainer())
                 {
                     var item = model.RestaurantSettingsSet.FirstOrDefault(x => x.User.Equals(user) &&
-                        x.Date.Year == DateTime.Now.Year &&
-                        x.Date.Month == DateTime.Now.Month &&
-                        x.Date.Day == DateTime.Now.Day);
+                        x.Date.Year == date.Year &&
+                        x.Date.Month == date.Month &&
+                        x.Date.Day == date.Day);
                     if (item == null)
                     {
-                        model.RestaurantSettingsSet.Add(new RestaurantSettings() { User = user, Date = DateTime.Now, RestaurantVotedId = restaurantId });
+                        model.RestaurantSettingsSet.Add(new RestaurantSettings() { User = user, Date = date, RestaurantVotedId = restaurantId });
                     }
                     else
                     {
@@ -129,11 +129,11 @@ namespace dbtest.Map
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public bool UserWithTodayVote(string user)
+        public bool UserWithTodayVote(string user, DateTime day)
         {
             try
             {
-                return UsersWithVoteToday().ContainsKey(user);
+                return UsersWithVoteToday(day).ContainsKey(user);
             }
             catch (Exception)
             {
@@ -150,7 +150,7 @@ namespace dbtest.Map
             var users = new List<string>();
             try
             {
-                foreach (var item in UsersWithVoteToday())
+                foreach (var item in UsersWithVoteToday(DateTime.Now))
                 {
                     users.Add(item.Key);
                 }
@@ -167,13 +167,13 @@ namespace dbtest.Map
         /// </summary>
         /// <param name="user"></param>
         /// <param name="restaurantId"></param>
-        public void Vote(string user, int restaurantId)
+        public void Vote(string user, int restaurantId, DateTime day)
         {
-            if (UserWithTodayVote(user))
+            if (UserWithTodayVote(user, day))
             {
                 throw new BusinessException("Usuário não pode votar mais de uma vez!");
             }
-            Voting(user, restaurantId, false, DateTime.Now);
+            Voting(user, restaurantId, false, day);
         }
 
         /// <summary>
@@ -199,26 +199,28 @@ namespace dbtest.Map
         }
 
         /// <summary>
-        /// Busca qual foi o restaurante mais votado no dia
+        /// Busca qual foi o restaurante mais votado no dia, sendo que ele não pode ter ganho na semana
         /// </summary>
         /// <returns>Retorna Id do restaurante mais votado e a quantidade de votos</returns>
-        public KeyValuePair<int, int> RestaurantWithMostVotesToday()
+        public KeyValuePair<int, int> RestaurantWithMostVotesToday(List<RestaurantEntity> mostVotesInWeek)
         {
             var aux = new Dictionary<int, int>();
 
             try
             {
-                foreach (var item in UsersWithVoteToday())
+                foreach (var item in UsersWithVoteToday(DateTime.Now))
                 {
                     if (item.Value.Date.Equals(DateTime.Now.ToShortDateString()))
                     {
-                        if (!aux.ContainsKey(item.Value.RestaurantId))
-                        {
-                            aux.Add(item.Value.RestaurantId, 1);
-                        }
-                        else
-                        {
-                            aux[item.Value.RestaurantId] = aux[item.Value.RestaurantId] + 1;
+                        if (!mostVotesInWeek.Exists(x => x.Id == item.Value.RestaurantId)) {
+                            if (!aux.ContainsKey(item.Value.RestaurantId))
+                            {
+                                aux.Add(item.Value.RestaurantId, 1);
+                            }
+                            else
+                            {
+                                aux[item.Value.RestaurantId] = aux[item.Value.RestaurantId] + 1;
+                            }
                         }
                     }
                 }
@@ -243,7 +245,7 @@ namespace dbtest.Map
         {
             var ret = new List<RestaurantEntity>();
 
-            var userVotes = UsersWithVoteToday();
+            var userVotes = UsersWithVoteToday(DateTime.Now);
 
             foreach (var item in userVotes)
             {

@@ -43,7 +43,9 @@ namespace dbtest.Methods
         /// <returns>Entidade de restaurante</returns>
         public static RestaurantEntity GetRestaurantWinnerToday()
         {
-            var values = RestaurantSettingsMap.Instance.RestaurantWithMostVotesToday();
+            var mostVotesInWeek = GetRestaurantsVotedWeek();
+
+            var values = RestaurantSettingsMap.Instance.RestaurantWithMostVotesToday(mostVotesInWeek);
             var rest = RestaurantMap.Instance.FindById(values.Key);
             rest.Votes = values.Value;
 
@@ -64,9 +66,9 @@ namespace dbtest.Methods
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public static bool UserWithTodayVote(string user)
+        public static bool UserWithTodayVote(string user, DateTime day)
         {
-            return RestaurantSettingsMap.Instance.UserWithTodayVote(user);
+            return RestaurantSettingsMap.Instance.UserWithTodayVote(user, day);
         }
 
         /// <summary>
@@ -83,9 +85,9 @@ namespace dbtest.Methods
         /// </summary>
         /// <param name="user"></param>
         /// <param name="restaurantId"></param>
-        public static void Vote(string user, int restaurantId)
+        public static void Vote(string user, int restaurantId, DateTime day)
         {
-            RestaurantSettingsMap.Instance.Vote(user, restaurantId);
+            RestaurantSettingsMap.Instance.Vote(user, restaurantId, day);
         }
 
         /// <summary>
@@ -141,7 +143,21 @@ namespace dbtest.Methods
         /// <returns>Lista de entidade de restaurante</returns>
         public static List<RestaurantEntity> GetRestaurantsVotedWeek() 
         {
-            return RestaurantMap.Instance.FindAllVotedWeek();
+            return RestaurantMap.Instance.FindAllVotedWeek(GetFirstDayofWeek(DateTime.Now), GetLastDayofWeek(DateTime.Now));
+        }
+
+        private static DateTime GetFirstDayofWeek(DateTime date)
+        {
+            int lessNumber = 0;
+
+            return date.AddDays(lessNumber - date.DayOfWeek.GetHashCode());
+        }
+
+        private static DateTime GetLastDayofWeek(DateTime date)
+        {
+            int GreateNumber = 6;
+
+            return date.AddDays(GreateNumber - date.DayOfWeek.GetHashCode());
         }
     }
 }

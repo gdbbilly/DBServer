@@ -1,4 +1,6 @@
-﻿using dbtest.Mvc.Models;
+﻿using dbtest.Exceptions;
+using dbtest.Mvc.Models;
+using dbtest.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +34,21 @@ namespace dbtest.Mvc.Controllers
                 HttpContext.Response.Cookies.Add(cookie);
 
                 return RedirectToAction("Index", "Home");
+            }
+        }
+
+        public JsonResult LogOff()
+        {
+            try
+            {
+                FormsAuthentication.SignOut();
+                HttpContext.Response.Cookies.Clear();
+
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+            catch (BusinessException e)
+            {
+                return Json(e.ExceptionMessage, JsonRequestBehavior.AllowGet);
             }
         }
     }

@@ -123,6 +123,7 @@
     <Content Include="Content\css\Site.css" />
     <Content Include="Content\css\signin.css" />
     <Content Include="Content\css\SiteCA.css" />
+    <Content Include="Content\images\home.jpg" />
     <Content Include="Content\images\logo-small.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />

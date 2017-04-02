@@ -22,26 +22,26 @@
     width: 25px;
     height: 25px;
     right: 5px;
-    margin-left: 20px !important;
-    margin-top: -2px !important;
+    margin-left: 20px ;
+    margin-top: -2px ;
 }
 
 .user-text {
     font-family: LatoRegular;
     font-size: 12px;
     color: #f6f6f6;
-    padding-top: 13px !important;
-    padding-left: 70% !important;
-    position: absolute !important;
+    padding-top: 13px ;
+    padding-left: 70% ;
+    position: absolute ;
 }
 
 .user-text-header {
     font-family: LatoRegular;
     font-size: 16px;
     color: #f6f6f6;
-    padding-top: 13px !important;
-    padding-left: 70% !important;
-    position: absolute !important;
+    padding-top: 13px ;
+    padding-left: calc(80% - 50px);
+    position: absolute ;
 }
 
 .divStyle {
@@ -416,20 +416,6 @@
     background-color: #FFFFFF !important;
     border-bottom: solid 1px #F0F0F0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #simpledialog-modal-container {
     display: none;

@@ -8,7 +8,6 @@ D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\dbtest.Exceptions.dll
 D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\dbtest.Map.dll
 D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\dbtest.Methods.dll
 D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\dbtest.Util.dll
-D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\EntityFramework.dll
 D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\dbtest.Map.pdb
@@ -20,3 +19,5 @@ D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\EntityFramework.xml
 D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projetos\DBServer\dbtest.UnitTest\obj\Debug\dbtest.UnitTest.dll
 D:\Projetos\DBServer\dbtest.UnitTest\obj\Debug\dbtest.UnitTest.pdb
+D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\System.Web.Mvc.dll
+D:\Projetos\DBServer\dbtest.UnitTest\bin\Debug\System.Web.Mvc.xml

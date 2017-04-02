@@ -1,5 +1,6 @@
 ﻿using dbtest.Methods;
 using dbtest.Service.Contracts;
+using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 
@@ -141,9 +142,9 @@ namespace dbtest.service
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public bool ChecksIfUserVote(string user)
+        public bool ChecksIfUserVote(string user, DateTime day)
         {
-            return RestaurantMethods.UserWithTodayVote(user);
+            return RestaurantMethods.UserWithTodayVote(user, day);
         }
 
         /// <summary>
@@ -161,9 +162,9 @@ namespace dbtest.service
         /// </summary>
         /// <param name="user">Usuário</param>
         /// <param name="restaurantId">Id do restaurante</param>
-        public void VoteInRestaurant(string user, int restaurantId)
+        public void VoteInRestaurant(string user, int restaurantId, DateTime day)
         {
-            RestaurantMethods.Vote(user, restaurantId);
+            RestaurantMethods.Vote(user, restaurantId, day);
         }
 
         /// <summary>

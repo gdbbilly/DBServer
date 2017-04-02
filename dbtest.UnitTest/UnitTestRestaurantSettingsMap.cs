@@ -12,7 +12,7 @@ namespace dbtest.UnitTest
         public void TestMethodRestaurantMapFindAll()
         {
             bool success = true;
-            RestaurantSettingsMap.Instance.Vote("usuário votador 1", 11);
+            RestaurantSettingsMap.Instance.Vote("usuário votador 1", 11, DateTime.Now);
 
             if (RestaurantSettingsMap.Instance.RestaurantWithVotesToday().Count <= 0)
                 success = false;
@@ -21,7 +21,7 @@ namespace dbtest.UnitTest
             if (!users.Contains("usuário votador 1"))
                 success = false;
 
-            success = RestaurantSettingsMap.Instance.UserWithTodayVote("usuário votador 1");
+            success = RestaurantSettingsMap.Instance.UserWithTodayVote("usuário votador 1", DateTime.Now);
 
             if (RestaurantSettingsMap.Instance.UserVote("usuário votador 1") != 11)
                 success = false;

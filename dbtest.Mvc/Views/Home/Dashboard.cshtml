@@ -3,6 +3,19 @@
     $(document).ready(function () {
         $("#divAllMiddle").width($("#divAll").width() - 300);
     });
+
+    function logOut() {
+        $.ajax({
+            type: "GET",
+            url: '/Login/LogOff',
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json",
+            success: function (data) {
+                location.href = "/";
+            },
+            error: function () { alert('Erro ao realizar logoff'); }
+        });
+    }
 </script>
 <div class="authentication-header">
     <div class="authentication-footer-text">
@@ -11,6 +24,10 @@
     </div>
     <div class="user-text-header">
         @{Html.RenderAction("NameHeader");}
+        <div style="float: right; margin-left: 50px;">
+            <a rel="nofollow" href="#" onclick="logOut();">Sair</a>
+        </div>
+
     </div>
 </div>
 <div id="divAll" class="divAll">
@@ -27,12 +44,12 @@
         @{
             if (Model)
             {
-            <div class="divLeft divStyle">
-                @{
-                Html.RenderAction("Administration");
-                }
-            </div>
-            }
+                <div class="divLeft divStyle">
+                    @{
+                        Html.RenderAction("Administration");
+                    }
+                </div>
+                        }
         }
     </div>
     <div id="divAllMiddle" class="divAllMiddle">

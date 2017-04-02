@@ -3,3 +3,24 @@
 ################################################################################
 
 *.suo
+/dbtest.BD/bin
+/dbtest.BD/obj
+/dbtest.data/bin
+/dbtest.data/obj
+/dbtest.Entities/bin
+/dbtest.Entities/obj
+/dbtest.Exceptions/bin
+/dbtest.Exceptions/obj
+/dbtest.Mvc/bin
+/dbtest.Mvc/obj
+/dbtest.service/bin
+/dbtest.service/obj
+/dbtest.Service.Entities/bin
+/dbtest.Service.Entities/obj
+/dbtest.UnitTest/bin
+/dbtest.UnitTest/obj
+/dbtest.Util/bin/Debug
+/dbtest.Util/obj/Debug
+/dbtest.Wpf/bin
+/dbtest.Wpf/obj
+/TestResults

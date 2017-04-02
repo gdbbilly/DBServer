@@ -40,10 +40,10 @@ namespace dbtest.Service.Contracts
         List<string> UsersWithTodayVote();
         
         [OperationContract]
-        void VoteInRestaurant(string user, int restaurantId);
+        void VoteInRestaurant(string user, int restaurantId, DateTime day);
         
         [OperationContract]
-        bool ChecksIfUserVote(string user);
+        bool ChecksIfUserVote(string user, DateTime day);
         
         [OperationContract]
         int UserVote(string user);

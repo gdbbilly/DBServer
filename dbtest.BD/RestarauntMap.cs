@@ -244,11 +244,15 @@ namespace dbtest.Map
         /// Busca todos restaurantes que foram os mais votados na semana.
         /// </summary>
         /// <returns>Lista de entidade de restaurante</returns>
-        public List<RestaurantEntity> FindAllVotedWeek()
+        public List<RestaurantEntity> FindAllVotedWeek(DateTime lessDate, DateTime greaterDate)
         {
             try
             {
-                return _list.Where(x => x.VotedInWeek).ToList();
+                return _list
+                    .Where(x => x.VotedInWeek
+                            && Convert.ToDateTime(x.DateVoted.ToShortDateString()) >= Convert.ToDateTime(lessDate.ToShortDateString())
+                            && Convert.ToDateTime(x.DateVoted.ToShortDateString()) <= Convert.ToDateTime(greaterDate.ToShortDateString()))
+                    .ToList();
             }
             catch (Exception ex)
             {
