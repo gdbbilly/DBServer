@@ -12,7 +12,7 @@ namespace dbtest.Exceptions
     public class BusinessException : Exception
     {
         private string _exceptionmessage;
-        private string _stackTrace;
+        private string _stackTrace;aaaa
 
         public string ExceptionMessage
         {
